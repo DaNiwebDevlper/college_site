@@ -1,0 +1,24 @@
+[
+    {
+      "id": "1",
+      "imgSrc": "/images/csdept2.jpg",
+      "title": "BS Computer Science"
+    },
+    {
+      "id": "2",
+      "imgSrc": "/images/mathdept.jpg",
+      "title": "BS Math"
+    },
+    
+    {
+      "id": "3",
+      "imgSrc": "/images/csdept.jpg",
+      "title": "BS English"
+    },
+    {
+      "id": "4",
+      "imgSrc": "/images/csdept3.jpg",
+      "title": "BS Physics"
+    }
+  ]
+  

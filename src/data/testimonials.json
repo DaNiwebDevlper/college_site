@@ -1,0 +1,51 @@
+[
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "DR. Zahoor Ahmad Bhatti",
+    "doj": "2019-04-25 ",
+    "dor": "2022-12-31",
+    "imgSrc": "/images/principal.jpg"
+  },
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "Prof. Muhammad Atiq Quashi",
+    "doj": "2018-12-07 ",
+    "dor": "2019-04-24",
+    "imgSrc": "/images/atiq.png"
+  },
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "Prof. Muhammad Younus",
+    "doj": "2016-10-01 ",
+    "dor": "2018-12-16",
+    "imgSrc": "/images/younes.png"
+  },
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "Prof. Mazher Nadeem Randhawa",
+    "doj": "2015-08-13 ",
+    "dor": "2016-09-30",
+    "imgSrc": "/images/mazher.png"
+  },
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "Prof. Syed Ijaz Ahmad",
+    "doj": "2015-06-03 ",
+    "dor": "2015-08-12",
+    "imgSrc": "/images/demi.png"
+  },
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "Prof. Muhammad Yaqoob Amjad",
+    "doj": "2012-05-16 ",
+    "dor": "2015-06-02",
+    "imgSrc": "/images/yaqoobamjad.jpg"
+  },
+  {
+    "author": "DR. Zahoor Ahmad Bhatti",
+    "title": "Prof. Syed Riaz Hussain",
+    "doj": "2008-08-03 ",
+    "dor": "2012-03-24",
+    "imgSrc": "/images/syedriazahmad.jpg"
+  }
+]

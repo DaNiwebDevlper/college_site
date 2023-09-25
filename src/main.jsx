@@ -1,0 +1,40 @@
+import ReactDOM from "react-dom/client";
+import React from "react";
+import "./index.css";
+import Home from "./components/home/Home";
+import Gallery from "./components/gallery/Gallery";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Department from "./components/department/Department";
+import {
+  Route,
+  BrowserRouter as Router,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import Layout from "./Layout.jsx";
+import DeptDetailCard from "./components/department/DeptDetailCard";
+import GalleryDetailCard from "./components/gallery/GalleryDetailCard";
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route path="" element={<Home />} />
+      <Route path="/department" element={<Department />} />
+      <Route path="gallery" element={<Gallery />} />
+      <Route path="/about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="/department/:id" element={<DeptDetailCard />} />
+      <Route path="/gallery/:id" element={<GalleryDetailCard />} />
+    </Route>
+  )
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+  document.getElementById("root")
+);

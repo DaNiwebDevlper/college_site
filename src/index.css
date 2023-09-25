@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&family=Work+Sans:wght@300;400&display=swap');
+*{
+  font-family: 'Mooli', sans-serif;
+} */
+
+@layer components {
+  .heading {
+    @apply md:text-3xl text-2xl font-bold text-center relative inline-block mb-5 
+        before:content-[""] before:absolute before:top-[79%] md:before:left-[-20px] before:left-[-12px] before:w-5 before:h-5 before:bg-rose-800 before:rounded-full
+        after:content-[""] after:absolute after:top-[90%] after:left-[-4px] md:after:w-[300px] after:w-[220px]  after:rounded-md after:h-2 after:bg-gradient-to-r from-rose-800 to-rose-500;
+  }
+
+  .special-button {
+    @apply relative w-full inline-flex items-center justify-center 
+    p-0.5 mb-2 mr-2 overflow-hidden text-[16px] font-medium text-gray-100 
+    rounded-lg  bg-gradient-to-br from-red-800 to-red-500 
+    transition-all hover:text-slate-100 dark:text-black focus:ring-1 focus:outline-none 
+     dark:focus:ring-slate-800;
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.121);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d3caca;
+  border-radius: 10px;
+  }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(208, 42, 89) ;
+}
