@@ -176,7 +176,7 @@ export default function NavBar() {
               className="relative px-4 py-2 transition-all ease-in duration-75
               dark:bg-gray-100 rounded-md group-hover:bg-opacity-0"
             >
-              Get Card
+              <a target="_blank" href="https://getstudentcard-gmdc.cyclic.app/">Get Card</a>
             </span>
           </button>
         </div>

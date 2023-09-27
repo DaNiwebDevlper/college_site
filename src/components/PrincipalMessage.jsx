@@ -4,7 +4,7 @@ const PrincipalMessage = () => {
   return (
     <div className=" ">
       <div className="w-full h-[80px] shadow-lg bg-gradient-to-r my-5 mb-2 from-rose-900 via-rose-600 to-rose-900 flex items-center justify-center">
-        <h1 className="md:text-3xl text-2xl font-semibold text-center">
+        <h1 className="md:text-3xl text-2xl font-semibold text-center text-white/90">
           Principal's Message
         </h1>
       </div>
@@ -29,7 +29,7 @@ const PrincipalMessage = () => {
             <h2 className="mb-2 bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent">Principal Message</h2>
           </div>
 
-          <p className="text-slate-600">
+          <p className="text-slate-600 text-justify md:text-lg text-sm ">
             For a system to flourish and thrive, every member of it should carry
             out their responsibilities sincerely. The progress and betterment of
             the college not only depends on the teacher but also on the

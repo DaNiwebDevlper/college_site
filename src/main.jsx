@@ -16,6 +16,7 @@ import {
 import Layout from "./Layout.jsx";
 import DeptDetailCard from "./components/department/DeptDetailCard";
 import GalleryDetailCard from "./components/gallery/GalleryDetailCard";
+import AnncoumentCard from "./components/annocument/AnncoumentCard";
 
 
 const router = createBrowserRouter(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="/department/:id" element={<DeptDetailCard />} />
       <Route path="/gallery/:id" element={<GalleryDetailCard />} />
+      <Route path="/anncoument/:id" element={<AnncoumentCard />} />
     </Route>
   )
 );

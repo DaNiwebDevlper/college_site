@@ -3,7 +3,6 @@ import deptDetail from "./deptDetail.json";
 import { useParams } from "react-router-dom";
 
 const DeptDetailCard = () => {
-  
   let params = useParams();
 
   var imageStyle = {
@@ -19,7 +18,7 @@ const DeptDetailCard = () => {
     <>
       <div className="flex justify-center items-center" style={imageStyle}>
         <h1 className="md:text-5xl text-2xl text-white font-semibold">
-          Department of 
+          
         </h1>
       </div>
       <div className="flex gap-10 h-full flex-wrap justify-center py-10">
@@ -30,7 +29,7 @@ const DeptDetailCard = () => {
                 <div
                   key={i}
                   className="w-[265px] h-[100%] bg-slate-50 border border-gray-200 
-                  overflow-hidden rounded-lg shadow-lg shadow-slate-200 dark:border-gray-700"
+                  overflow-hidden rounded-lg shadow-lg shadow-slate-200 dark:border-gray-700 cursor-pointer"
                 >
                   <img
                     className="rounded-t-lg w-[265px] h-[170px] bg-cover hover:scale-105 ease-in-out duration-200"
@@ -43,32 +42,21 @@ const DeptDetailCard = () => {
                       {deptdetail.name}
                     </h5>
 
+                    <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
+                      <span className="font-semibold text-black">Desig:</span>
+                      {deptdetail.desig}
+                    </p>
+                    <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
+                      <span className="font-semibold text-black">
+                        Education
+                      </span>{" "}
+                      {deptdetail.edu}
+                    </p>
                     
-                      <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
-                        <span className="font-semibold text-black">
-                          Desig:
-                        </span>
-                        {deptdetail.desig}
-                      </p>
-                      <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
-                        <span className="font-semibold text-black">
-                          Education
-                        </span>{" "}
-                        {deptdetail.edu}
-                      </p>
-                      <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
-                        <span className="font-semibold text-black">
-                          Education:
-                        </span>{" "}
-                        {deptdetail.edu}
-                      </p>
-                      <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
-                        <span className="font-semibold text-black">
-                          Dept:
-                        </span>{" "}
-                        {deptdetail.depart}
-                      </p>
-                    
+                    <p className="border-b py-2 text-slate-600 border-slate-600 w-full">
+                      <span className="font-semibold text-black">Dept:</span>{" "}
+                      {deptdetail.depart}
+                    </p>
                   </div>
                 </div>
               </>

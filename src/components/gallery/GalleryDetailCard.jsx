@@ -19,7 +19,7 @@ const GalleryDetailCard = () => {
         if (param.id === gallerydetail.id) {
           return (
             <>
-              <div className=" w-[80%]">
+              <div key={i} className=" w-[80%]">
                 <div className="py-4">
                   <h1 className="font-bold text-rose-600 md:text-3xl py-5 text-2xl">
                     Event:{" "}

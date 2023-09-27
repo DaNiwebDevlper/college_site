@@ -62,7 +62,7 @@ const Home = () => {
       <PrincipalMessage />
 
       {/* ////////////////////////////---Card-Slider---////////////////////// */}
-      <main className={`md:flex min-h-screen flex-col`}>
+      <main className={`md:flex md:min-h-screen h-[75vh] flex-col`}>
         <div className="w-full h-[80px] shadow-lg bg-gradient-to-r my-5 mb-2 from-rose-900 via-rose-600 to-rose-900 flex items-center justify-center">
           <h1 className="md:text-3xl text-2xl font-semibold text-center">
             Previos Principals
