@@ -10,7 +10,7 @@
   .heading {
     @apply md:text-3xl text-2xl font-bold text-center relative inline-block mb-5 
         before:content-[""] before:absolute before:top-[79%] md:before:left-[-20px] before:left-[-12px] before:w-5 before:h-5 before:bg-rose-800 before:rounded-full
-        after:content-[""] after:absolute after:top-[90%] after:left-[-4px] md:after:w-[300px] after:w-[220px]  after:rounded-md after:h-2 after:bg-gradient-to-r from-rose-800 to-rose-500;
+        after:content-[""] after:absolute after:top-[90%] after:left-[-4px] md:after:w-full after:w-full  after:rounded-md after:h-2 after:bg-gradient-to-r from-rose-800 to-rose-500;
   }
 
   .special-button {

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "BS 2nd Semester Timetable w.e.f 04-09-23",
+        "date": "2023-10-03",
+        "imgSrc": "/images/timetable.jpg"
+    },
+    {
+        "id": "2",
+        "title": "First Year Time Table w.e.f 04-09-23",
+        "date": "2023-10-03",
+        "imgSrc": "/images/timetable.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Scenod Year Time Table w.e.f 04-09-23",
+        "date": "2023-10-03",
+        "imgSrc": "/images/timetable.jpg"
+    },
+    {
+        "id": "4",
+        "title": "BSCS 6th Semester(Evening) Timetable",
+        "date": "2023-10-03",
+        "imgSrc": "/images/timetable.jpg"
+    }
+]

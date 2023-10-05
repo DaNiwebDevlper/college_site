@@ -17,7 +17,11 @@ import Layout from "./Layout.jsx";
 import DeptDetailCard from "./components/department/DeptDetailCard";
 import GalleryDetailCard from "./components/gallery/GalleryDetailCard";
 import AnncoumentCard from "./components/annocument/AnncoumentCard";
-
+import Fees from "./components/Fees";
+import Parking from "./components/Parking";
+import MeritList from "./components/quickAccess/MeritList"
+import Exams from "./components/Exams";
+import TimeTable from "./components/TimeTable";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +31,11 @@ const router = createBrowserRouter(
       <Route path="gallery" element={<Gallery />} />
       <Route path="/about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="fee&fine" element={<Fees />} />
+      <Route path="parking" element={<Parking />} />
+      <Route path="meritList" element={<MeritList />} />
+      <Route path="exams" element={<Exams />} />
+      <Route path="timetable" element={<TimeTable />} />
       <Route path="/department/:id" element={<DeptDetailCard />} />
       <Route path="/gallery/:id" element={<GalleryDetailCard />} />
       <Route path="/anncoument/:id" element={<AnncoumentCard />} />
