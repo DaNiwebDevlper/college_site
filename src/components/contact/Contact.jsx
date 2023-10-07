@@ -1,14 +1,28 @@
-
+import { AiOutlineSend } from "react-icons/ai";
+import { BiMailSend } from "react-icons/bi"
+import { ImLocation } from "react-icons/im"
 const Contact = () => {
+
+  var imageStyle = {
+    background:
+      'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), url("/images/bg-contnet2.svg") no-repeat',
+    backgroundSize: "cover",
+    width: "100%",
+    height: "100%",
+    backgroundPosition: "center",
+
+    // Adjust the height as needed
+  };
+
   return (
     <div>
-      <section className="text-gray-700 body-font relative">
-        <div className="container px-5 py-5 mx-auto">
+      <section className="text-gray-700 body-font relative object-fill" >
+        <div className="container px-5 py-5 mx-auto" style={imageStyle}>
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">
               Contact Us
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed font-semibold text-lg text-black/60">
               If you have any problem please contact us.
             </p>
           </div>
@@ -16,14 +30,15 @@ const Contact = () => {
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label for="name" className="leading-7 text-sm text-gray-600">
+                  <label for="name" className="leading-7 text-md pl-1 text-gray-600 font-semibold">
                     Name
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-rose-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    placeholder="Enter your name..."
+                    className="w-full bg-white/40 rounded border border-slate-300  focus:border-rose-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -31,7 +46,7 @@ const Contact = () => {
                 <div className="relative">
                   <label
                     for="email"
-                    className="leading-7 text-sm ml-1 text-gray-600 font-semibold"
+                    className="leading-7 text-md ml-1 text-gray-600 font-semibold"
                   >
                     Email
                   </label>
@@ -40,7 +55,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     placeholder="Enter the email"
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-rose-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white/40 rounded border border-gray-300 focus:border-rose-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -55,22 +70,27 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-rose-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white/40 rounded border border-gray-300 focus:border-rose-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-rose-500 border-0 py-2 px-8 focus:outline-none hover:bg-rose-600 rounded text-lg">
-                  Submit
+                <button className="flex items-center gap-1 mx-auto text-white bg-red-600/60 border-0 py-2 px-5 focus:outline-none transition-all hover:bg-red-600/80 rounded-md text-lg">
+                  <AiOutlineSend /> Send
                 </button>
               </div>
-              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-rose-500">example@email.com</a>
-                <p className="leading-normal my-5">
-                  49 Smith St.
-                  <br />
-                  Saint Cloud, MN 56301
-                </p>
+              <div className="flex flex-col justify-center items-center my-5 w-full text-lg pt-8 mt-8 border-t border-gray-200 text-center">
+                <div className="flex gap-2 items-center text-red-600/60 hover:text-red-600 transition-all">
+                  <BiMailSend className="text-2xl" />
+                  <a className=" font-bold " href="https://mail.google.com" target="_blank">info@gmdc.edu.pk</a>
+                </div>
+                <div className="text-[16px] gap-2 flex items-center">
+                  <ImLocation className="text-2xl" />
+                  <p className="leading-normal my-5">
+                    Govt.Municipal Degree College br Faisalabad Jaranwala Road, Faisalabad
+                  </p>
+                </div>
+
                 <span className="inline-flex">
                   <a className="text-gray-500">
                     <svg

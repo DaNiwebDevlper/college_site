@@ -1,17 +1,9 @@
 import { useParams } from "react-router-dom";
 import galleryData from "./galleryData.json"
-// import galleryDetail from "./galleryDetail.json";
-// import { useEffect, useState } from "react";
+
 
 const GalleryDetailCard = () => {
-  // const [images, setImages] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("./galleryDetail.json") // Adjust the path to your JSON file
-  //     .then((response) => response.json())
-  //     .then((data) => setImages(data))
-  //     .catch((error) => console.error("Error fetching data:", error));
-  // }, []);
+ 
   let param = useParams();
   return (
     <div className="w-full h-full flex flex-col justify-center items-center ">
