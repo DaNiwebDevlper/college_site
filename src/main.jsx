@@ -22,7 +22,7 @@ import Parking from "./components/Parking";
 import MeritList from "./components/quickAccess/MeritList"
 import Exams from "./components/Exams";
 import TimeTable from "./components/TimeTable";
-
+import DevelopmentTeam from "./components/about/DevelopmentTeam";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -34,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="fee&fine" element={<Fees />} />
       <Route path="parking" element={<Parking />} />
       <Route path="meritList" element={<MeritList />} />
+      <Route path="team" element={<DevelopmentTeam />} />
       <Route path="exams" element={<Exams />} />
       <Route path="timetable" element={<TimeTable />} />
       <Route path="/department/:id" element={<DeptDetailCard />} />

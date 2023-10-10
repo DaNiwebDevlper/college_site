@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
+import { RiArrowDropDownLine } from "react-icons/ri"
 
 
 export default function NavBar() {
@@ -84,9 +84,7 @@ export default function NavBar() {
                   to="/"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"
-                    } border-b 
-                                        border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent 
-                                        lg:border-0 hover:text-rose-800 lg:p-0`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent  lg:border-0 hover:text-rose-800 lg:p-0`
                   }
                 >
                   Home
@@ -122,14 +120,30 @@ export default function NavBar() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"
-                    } border-b 
-                                        border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent 
-                                        lg:border-0 hover:text-rose-800 lg:p-0`
+                    `block pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-rose-800 lg:p-0 relative group`
                   }
                 >
-                  About
+
+                  {/* ////////////---DropDown Menu---///////////// */}
+
+                  <Link to="/about" className="flex items-center"> <RiArrowDropDownLine className="text-3xl" />  About us </Link>
+                  <div className="absolute hidden space-y-2 bg-white text-[15px] text-gray-700 
+                    group-hover:block w-[180px] text-center rounded-lg overflow-hidden font-normal ">
+                    <Link to="#" className="block px-4 py-2 hover:bg-gray-200 hover:underline transition-all">
+                      Rules & Regulation
+                    </Link>
+                    <Link to="#" className="block px-4 py-2 hover:bg-gray-200 hover:underline transition-all">
+                      Glimpse of College
+                    </Link>
+                    <Link to="/team" className="block px-4 py-2 pb-4 hover:bg-gray-200 hover:underline  transition-all">
+                      Development Team
+                    </Link>
+                  </div>
+
+
                 </NavLink>
+                {/* //////////////////////////////////////// */}
               </li>
               <li className="text-black font-semibold text-[18px] hover:text-rose-800 border-b-2 py-2 md:border-none">
                 <NavLink
