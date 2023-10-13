@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ProfileCard = ({ title, imgSrc, skill, CV,pdfName}) => {
+export const ProfileCard = ({ title, imgSrc, skill, CV}) => {
     // const downloadPDF = () => {
     //     const links = document.createElement('a');
     //     ink.href = {`${CV}`}; // Replace with the actual path to your PDF file

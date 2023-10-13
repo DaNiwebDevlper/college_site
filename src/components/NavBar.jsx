@@ -130,7 +130,7 @@ export default function NavBar() {
                   <Link to="/about" className="flex items-center"> <RiArrowDropDownLine className="text-3xl" />  About us </Link>
                   <div className="absolute hidden space-y-2 bg-white text-[15px] text-gray-700 
                     group-hover:block w-[180px] text-center rounded-lg overflow-hidden font-normal ">
-                    <Link to="#" className="block px-4 py-2 hover:bg-gray-200 hover:underline transition-all">
+                    <Link to="rules" className="block px-4 py-2 hover:bg-gray-200 hover:underline transition-all">
                       Rules & Regulation
                     </Link>
                     <Link to="#" className="block px-4 py-2 hover:bg-gray-200 hover:underline transition-all">
