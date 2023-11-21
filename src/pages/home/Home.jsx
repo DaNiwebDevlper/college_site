@@ -70,7 +70,7 @@ const Home = () => {
       <PrincipalMessage />
 
       {/* ////////////////////////////---Card-Slider---////////////////////// */}
-      <main className={`md:flex md:min-h-screen h-[75vh] flex-col`}>
+      <main className={`md:flex md:min-h-screen min-h-[75vh] flex-col my-9`}>
         <div className="w-full h-[80px] shadow-lg bg-gradient-to-r my-5 mb-2 from-rose-900 via-rose-600 to-rose-900 flex items-center justify-center">
           <h1 className="md:text-3xl text-2xl font-semibold text-center">
             Previos Principals
@@ -82,7 +82,7 @@ const Home = () => {
             {testimonials.map((testimonial, i) => (
               // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
               // for mobile devices we use 90% width
-              <div key={i} className="flex-[0_0_90%] md:flex-[0_1_50%] pt-7">
+              <div key={i} className="flex-[0_0_90%] md:flex-[0_1_50%] pt-7 md:ml-0 ml-[80px] md:mt-9">
                 <CardDefault {...testimonial} />
               </div>
             ))}

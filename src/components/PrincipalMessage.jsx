@@ -8,6 +8,7 @@ const PrincipalMessage = () => {
           Principal's Message
         </h1>
       </div>
+      
       <div className="flex md:justify-evenly py-9 justify-center items-center flex-col md:flex-row">
         <motion.div
           whileInView={{ x: [-100, 0] }}
@@ -16,7 +17,7 @@ const PrincipalMessage = () => {
             <img
               src="/images/principal.jpg"
               alt="principal-img"
-              className="md:w-[450px] w-[300px] rounded-xl shadow-lg"
+              className="md:w-[450px] w-[350px] rounded-xl shadow-lg"
             />
             <div className="overlay text-center md:text-2xl text-lg  font-semibold">
               Muhammad Iqbal Chohan <br />
@@ -30,14 +31,15 @@ const PrincipalMessage = () => {
         </motion.div>
         <motion.div
           whileInView={{ x: [100, 0] }}
-          transition={{ duration: 1 }}>
+          transition={{ duration: 1 }}
+          className="flex justify-center">
 
-          <div className="md:w-[500px] w-[300px]">
+          <div className="md:w-[500px] w-[80%]">
             <div className="heading pt-3">
               <h2 className="mb-2 bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent">Principal Message</h2>
             </div>
 
-            <p className="text-slate-600 text-justify md:text-lg text-sm ">
+            <p className="text-slate-600 text-justify md:text-lg text-md ">
               For a system to flourish and thrive, every member of it should carry
               out their responsibilities sincerely. The progress and betterment of
               the college not only depends on the teacher but also on the

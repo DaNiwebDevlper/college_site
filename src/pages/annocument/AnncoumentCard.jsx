@@ -31,7 +31,7 @@ const AnncoumentCard = () => {
 
                 {/* /////////////////--Images-Section--///////////////// */}
                 <div className="border border-rose-600 p-1 my-5">
-                  <img src={anncoumnetdata.url} alt="" className="w-full h-[80vh] " />
+                  <img src={anncoumnetdata.url} alt="" className="w-full  " />
                 </div>
               </div>
             </>

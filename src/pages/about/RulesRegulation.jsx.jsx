@@ -3,7 +3,7 @@ import ClgUniform from './ClgUniform'
 
 const RulesRegulation = () => {
   return (
-    <div className='w-full  bg-slate-100 flex flex-col items-center'>
+    <div className='w-full min-h-[100vh] bg-slate-100 flex flex-col items-center'>
       <div className="w-full h-[80px] shadow-lg bg-gradient-to-r mb-2 from-rose-900 via-rose-600 to-rose-900 flex items-center justify-center">
         <h1 className="md:text-3xl text-2xl font-semibold text-center text-white/90">
           Rules & Regulation

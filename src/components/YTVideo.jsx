@@ -8,15 +8,16 @@ const YTVideo = () => {
       <motion.div
         whileInView={{ x: [-100, 0] }}
         transition={{ duration: 1 }}
+        className="flex justify-center"
       >
-        <div className="md:w-[500px] md:ml-9 w-[300px]">
+        <div className="md:w-[500px] md:ml-9 w-[80%]">
           <h2
             className="md:text-3xl text-2xl font-bold 
         bg-gradient-to-r from-rose-700 to-rose-200 bg-clip-text text-transparent"
           >
             College Virtual Tour
           </h2>
-          <p className="text-gray-600 mt-4 text-[12px] md:text-[16px]">
+          <p className="text-gray-600 mt-4 text-justify text-md md:text-[16px]">
             Step into the world of Govt Muncipal Graduate College, where excellence meets
             opportunity. Our virtual tour invites you to explore our vibrant
             campus and cutting-edge facilities from the comfort of your screen.
@@ -43,7 +44,7 @@ const YTVideo = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="w-[300px] md:w-[550px] "
+            className="w-[400px] md:w-[550px] "
           ></iframe>
           {/* <ReactPlayer url="https://youtu.be/oMQIgZPf5Ng?si=COeN44aRPi7-c7oo" /> */}
         </div>

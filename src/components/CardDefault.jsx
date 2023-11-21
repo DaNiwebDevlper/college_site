@@ -2,7 +2,7 @@ import React from "react";
 
 const CardDefault = ({imgSrc,title, doj,dor}) => {
   return (
-    <div className="w-[265px] h-[100%] bg-slate-50 border border-gray-200 overflow-hidden rounded-lg shadow-lg dark:border-gray-700">
+    <div className="w-[265px]  h-[100%] bg-slate-50 border border-gray-200 overflow-hidden rounded-lg shadow-lg dark:border-gray-700">
       <img
         className="rounded-t-lg w-[265px] h-[170px] bg-cover hover:scale-105 ease-in-out duration-200"
         src={imgSrc}

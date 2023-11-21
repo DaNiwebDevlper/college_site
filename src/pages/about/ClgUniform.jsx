@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClgUniform = ({ title, summer, winter, note, imgSrc, width }) => {
     return (
-        <div className='flex justify-evenly h-screen items-center md:flex-row flex-col my-5'>
+        <div className='flex justify-evenly min-h-screen md:items-center items-left md:flex-row flex-col my-5'>
             
             <div className="w-[60%] mb-9">
             <p className='text-lg font-bold py-3 underline'>The following uniform is prescribed for the students of the college</p>
