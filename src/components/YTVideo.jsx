@@ -44,7 +44,7 @@ const YTVideo = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="w-[400px] md:w-[550px] "
+            className="w-[320px] md:w-[550px] "
           ></iframe>
           {/* <ReactPlayer url="https://youtu.be/oMQIgZPf5Ng?si=COeN44aRPi7-c7oo" /> */}
         </div>

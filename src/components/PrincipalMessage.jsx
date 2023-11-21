@@ -17,7 +17,7 @@ const PrincipalMessage = () => {
             <img
               src="/images/principal.jpg"
               alt="principal-img"
-              className="md:w-[450px] w-[350px] rounded-xl shadow-lg"
+              className="md:w-[450px] w-[320px] rounded-xl shadow-lg"
             />
             <div className="overlay text-center md:text-2xl text-lg  font-semibold">
               Muhammad Iqbal Chohan <br />
