@@ -23,7 +23,7 @@ const ImageSlider = () => {
 
     
     <>
-      <div className="w-[90%] md:w-[80%] md:h-[80vh] h-[40vh] max-w-[1400px] relative duration-500 mt-5 group">
+      <div className="w-[90%] md:w-[77%] md:h-[80vh] h-[40vh] max-w-[1400px] relative duration-500 mt-5 group">
         <div
           style={{ backgroundImage: `url(${slides[currIndex].url})` }}
           className="w-full h-full bg-center bg-cover rounded-2xl flex items-end overflow-hidden duration-500 shadow-lg shadow-black/40"

@@ -81,6 +81,7 @@ export default function NavBar() {
                hover:text-rose-800"
               >
                 <NavLink
+                  onClick={() => setNavbar(false)}
                   to="/"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"
@@ -93,6 +94,7 @@ export default function NavBar() {
               <li className="text-black font-[600] text-[18px] hover:text-rose-800">
                 <NavLink
                   to="/department"
+                  onClick={() => setNavbar(false)}
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"
                     } border-b 
@@ -105,6 +107,7 @@ export default function NavBar() {
               </li>
               <li className="text-black font-semibold text-[18px] hover:text-rose-800">
                 <NavLink
+                onClick={() => setNavbar(false)}
                   to="/gallery"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"
@@ -118,6 +121,7 @@ export default function NavBar() {
               </li>
               <li className="text-black font-semibold text-[18px] hover:text-rose-800">
                 <NavLink
+                onClick={() => setNavbar(false)}
                   to="/about"
                   className={({ isActive }) =>
                     `block pr-4 pl-3 duration-200 ${isActive ? "text-rose-900 font-bold" : "text-gray-700"

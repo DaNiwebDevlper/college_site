@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
 import "./index.css";
-import Home from "./components/home/Home";
-import Gallery from "./components/gallery/Gallery";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Department from "./components/department/Department";
+import Home from "./pages/home/Home";
+import Gallery from "./pages/gallery/Gallery";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import Department from "./pages/department/Department";
 import {
   Route,
   BrowserRouter as Router,
@@ -14,18 +14,19 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import DeptDetailCard from "./components/department/DeptDetailCard";
-import GalleryDetailCard from "./components/gallery/GalleryDetailCard";
-import AnncoumentCard from "./components/annocument/AnncoumentCard";
+import DeptDetailCard from "./pages/department/DeptDetailCard";
+import GalleryDetailCard from "./pages/gallery/GalleryDetailCard";
+import AnncoumentCard from "./pages/annocument/AnncoumentCard";
 import Fees from "./components/Fees";
 import Parking from "./components/Parking";
-import MeritList from "./components/quickAccess/MeritList"
+import MeritList from "./pages/quickAccess/MeritList"
 import Exams from "./components/Exams";
 import TimeTable from "./components/TimeTable";
-import DevelopmentTeam from "./components/about/DevelopmentTeam";
-import RulesRegulation from "./components/about/RulesRegulation.jsx";
+import DevelopmentTeam from "./pages/about/DevelopmentTeam";
+import RulesRegulation from "./pages/about/RulesRegulation.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
+
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="/department" element={<Department />} />
@@ -50,5 +51,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-  document.getElementById("root")
+
 );

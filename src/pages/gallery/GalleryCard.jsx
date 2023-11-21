@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 function GalleryCard() {
   return (
     <div className="w-[90%] mx-2">
-      {galleryData.map((props, k) => {
-        const dt = props.detail;
+      {galleryData.map((data, index) => {
+        const dt = data.detail;
         const a = dt.slice(0, 200);
         return (
           <>
             <div
-              key={k}
+              key={index}
               className="flex flex-col bg-gray-100 rounded-md hover:border-rose-700 
           border cursor-pointer my-5 md:flex-row"
             >
               <div className="h-full md:w-[300px] overflow-hidden">
-                <Link to={"/gallery/" + props.id}>
+                <Link to={"/gallery/" + data.id}>
                 <img
-                  src={props.imgSrc[0]}
-                  alt={props.title}
+                  src={data.imgSrc[0]}
+                  alt={data.title}
                   className="h-[200px] rounded-tl-md md:rounded-tr-none 
           rounded-tr-md md:rounded-bl-md object-cover w-full hover:scale-110 duration-200"
                 />
@@ -28,7 +28,7 @@ function GalleryCard() {
               <div className="p-5 grid gap-y-4 ">
                 <div className="">
                   <h1 className="inline-flex items-center text-xl font-semibold">
-                    {props.title}
+                    {data.title}
                   </h1>
                   <p className="mt-3 text-sm text-gray-600 md:w-[800px]">
                     {a + "..."}
@@ -36,7 +36,7 @@ function GalleryCard() {
                 </div>
 
                 <div className="w-full flex justify-between">
-                  <Link to={"/gallery/" + props.id}>
+                  <Link to={"/gallery/" + data.id}>
                     <button className="text-rose-600 hover:underline font-semibold">
                       Read more &rarr;
                     </button>
@@ -54,7 +54,7 @@ function GalleryCard() {
                     <p>
                       {" "}
                       
-                      {props.date}{" "}
+                      {data.date}{" "}
                     </p>
                   </div>
                 </div>
