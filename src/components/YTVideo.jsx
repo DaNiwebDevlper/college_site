@@ -6,7 +6,7 @@ const YTVideo = () => {
   return (
     <div className="h-full w-full flex md:justify-between items-center flex-col gap-y-5 mt-[70px] md:flex-row">
       <motion.div
-        whileInView={{ x: [-100, 0] }}
+        whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1 }}
         className="flex justify-center"
       >
@@ -33,7 +33,7 @@ const YTVideo = () => {
       </motion.div>
 
       <motion.div
-        whileInView={{ x: [100, 0] }}
+        whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1 }}>
         <div className="rounded overflow-hidden md:mr-9  shadow-lg">
           <iframe

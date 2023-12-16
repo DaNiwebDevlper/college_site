@@ -11,7 +11,7 @@ const PrincipalMessage = () => {
       
       <div className="flex md:justify-evenly py-9 justify-center items-center flex-col md:flex-row">
         <motion.div
-          whileInView={{ x: [-100, 0] }}
+          whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}>
           <div className="img-overlay">
             <img
@@ -30,7 +30,7 @@ const PrincipalMessage = () => {
           </div>
         </motion.div>
         <motion.div
-          whileInView={{ x: [100, 0] }}
+          whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
           className="flex justify-center">
 

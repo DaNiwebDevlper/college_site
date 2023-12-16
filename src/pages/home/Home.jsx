@@ -31,7 +31,7 @@ const Home = () => {
       >
 
         <motion.div
-          whileInView={{ x: [100, 0] }}
+          whileInView={{ opacity:[0,1] }}
           transition={{ duration: 1 }}
           >
           <div className="text-slate-200 text-center p-4">
